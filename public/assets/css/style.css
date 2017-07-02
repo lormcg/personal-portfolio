@@ -1,0 +1,16 @@
+.container {
+	max-width: 960px;
+}
+
+.navbar-default {
+	background-color: #fff;
+	border-color: #fff;
+
+}
+.navbar-default .navbar-brand {
+	font-size: 33px;
+	color: #fff;
+	text-shadow: #0066ff 2px 3px;
+	text-decoration:none;
+	font-weight: bold;
+}

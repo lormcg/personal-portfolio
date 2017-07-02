@@ -1,0 +1,25 @@
+{
+  "name": "lauramcginn.net",
+  "version": "1.0.0",
+  "description": "Portfolio site for Laura McGinn",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LauraMcG/dotnet.git"
+  },
+  "author": "Laura McGinn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LauraMcG/dotnet/issues"
+  },
+  "homepage": "https://github.com/LauraMcG/dotnet#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0"
+  }
+}

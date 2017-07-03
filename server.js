@@ -6,6 +6,7 @@ var exphbs = require('express-handlebars');
 var mongoose = require('mongoose');
 
 var Art = require('./models/Art.js');
+var Dev = require('./models/Dev.js');
 
 
 //EXPRESS CONFIG

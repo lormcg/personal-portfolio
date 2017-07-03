@@ -1,4 +1,5 @@
-var Art = require("../models/Art.js");
+var Art = require('../models/Art.js');
+var Dev = require('../models/Dev.js');
 
 module.exports = function(app) {
 
@@ -12,6 +13,16 @@ module.exports = function(app) {
 				console.log(error);	
 			} else {
 				res.render('art', {artworks: doc});
+			}
+		});
+	});
+
+	app.get('/code', function (req,res) {
+		Dev.find({}, function (error,doc) {
+			if (error) {
+				console.log(error);	
+			} else {
+				res.render('code', {apps: doc});
 			}
 		});
 	});

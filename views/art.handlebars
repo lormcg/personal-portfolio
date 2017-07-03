@@ -1,14 +1,28 @@
 <div class="container-fluid content" align = "center">
 	<h1>SELECTED WORKS</h1>
 
+	{{#each artworks}}
+
 	<div class= "galleryimg">
 		
-		<img src="art/2015/mcginn_shelter1ssu.jpg" class="img-responsive" alt="Shelter in Black and Blue. Acrylic on canvas, black and blue fluorescent light, wall. 10' x 15' x 8'.">
+		<img src="{{this.imageURL}}" class="img-responsive" alt="Shelter in Black and Blue. Acrylic on canvas, black and blue fluorescent light, wall. 10' x 15' x 8'.">
 		
 		<div class="caption">
-			<p>Shelter in Black and Blue. Acrylic on canvas, black and blue fluorescent light, wall. 10' x 15' x 8'. Installation at <i>Age of Consent</i>, Block Museum of Art. 2015. Photo &copy; Sean Su.</p>
+			<p>{{this.title}}. {{this.medium}}. {{this.dimensions}}. 
+					{{!-- only show notes (for installation nots or photo credit) if available. --}}
+					{{#if this.notes}}
+						{{this.notes}}.
+					{{else}}
+
+					{{/if}}
+				{{this.year}}.
+			</p>
 		</div>
 
 	</div>
+
+	{{/each}}
+
+	{{>long-footer}}
 
 </div> <!-- /.content -->

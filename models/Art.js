@@ -29,7 +29,7 @@ var ArtSchema = new Schema({
 		required: false
 	},
 	year: {
-		type: Date,
+		type: Number,
 		unique: false,
 		required: true
 	},

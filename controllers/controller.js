@@ -11,7 +11,7 @@ module.exports = function(app) {
 			if (error) {
 				console.log(error);	
 			} else {
-				res.render('art');
+				res.render('art', {artworks: doc});
 			}
 		});
 	});

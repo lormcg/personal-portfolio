@@ -13,8 +13,6 @@ body {
 	border-bottom: 0px;
 }
 
-
-
 .navbar-default .navbar-brand {
 	/*font-family: 'Roboto Condensed', sans-serif;*/
 	color: dodgerblue;
@@ -25,7 +23,6 @@ body {
 .navbar-default .navbar-brand:hover {
 	color: #D8DFE5;
 	font-weight: bold;
-
 }
 
 .navbar-default .navbar-nav li a:hover {
@@ -58,6 +55,10 @@ h1 {
 /* APP GALLERY */
 .app-gallery {
 	margin-top: 35px;
+}
+
+.app-gallery .caption {
+	text-align: left;
 }
 
 

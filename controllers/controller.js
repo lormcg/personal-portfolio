@@ -22,7 +22,7 @@ module.exports = function(app) {
 			if (error) {
 				console.log(error);	
 			} else {
-				res.render('code', {apps: doc});
+				res.render('code-main', {apps: doc});
 			}
 		});
 	});

@@ -1,0 +1,20 @@
+<div class="container-fluid content" align = "center">
+	<h1>APPS DEVELOPED</h1>
+
+{{#each apps}}
+	<div class= "app-gallery row">
+		<div class= "col-md-4">
+			<img src="{{this.image3URL}}" class="img-responsive" alt="{{this.title}}">
+		</div>
+
+			<div class="col-md-8 caption">
+				<h3>{{this.title}}(<a href="{{this.liveURL}}">Live</a> | <a href="{{this.githubRepo}}">GitHub</a>)</h3>
+				<p>{{this.tagline}}</p>
+			</div>
+	</div>
+
+	{{/each}}
+
+</div><!-- /.content -->
+
+{{> long-footer}}

@@ -3,33 +3,37 @@ var Dev = require('../models/Dev.js');
 
 module.exports = function(app) {
 
+///INDEX ROUTE
+
 	app.get('/', function(req,res) {
 		res.render('index');
 	});
 
-	//ART ROUTES
+//ART ROUTES
 
-	//display general art page
-	//currently just showing all in one go. will have splash later.
-	// app.get('/art', function (req,res) {
-	// 	Art.find({}, function (error,doc) {
-	// 		if (error) {
-	// 			console.log(error);	
-	// 		} else {
-	// 			res.render('art', {artworks: doc});
-	// 		}
-	// 	});
-	// });
+	//display general art page, linking to art by year.
+	app.get('/art', function (req,res) {
+		Art.find({}).distinct('year')
 
+			.exec(function (error,doc) {
+			if (error) {
+				console.log(error);
+			} else {
+				// console.log(doc);
+				res.render('art-main', {years: doc});
+			}
+		});
+	});
+	//pages for art by year.
 	app.get('/art/:year', function (req,res) {
 
-		Art.find({  'year' : req.params.year })
+		Art.find({ 'year' : req.params.year })
 
 		.exec(function (error,doc) {
 			if (error) {
 				console.log(error);
 			} else {
-				console.log(doc);
+				// console.log(doc);
 
 				res.render('art', {artworks: doc});
 			}
@@ -37,7 +41,7 @@ module.exports = function(app) {
 
 	});
 
-	//CODE ROUTES
+//CODE ROUTES
 
 	//display main code index
 	app.get('/code', function (req,res) {
@@ -58,12 +62,18 @@ module.exports = function(app) {
 			if (error) {
 				console.log(error);
 			} else {
-				console.log(doc);
+				// console.log(doc);
 
 				res.render('code-detail', {doc});
 			}
 		});
 
+	});
+
+//CONTACT ROUTE
+
+	app.get('/contact', function(req,res) {
+		res.render('contact');
 	});
 
 

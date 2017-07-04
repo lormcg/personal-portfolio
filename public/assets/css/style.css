@@ -8,22 +8,28 @@ body {
 /* NAVBAR */
 
 .navbar {
-	background-color: ghostwhite;
-	font-family: 'Roboto Condensed', sans-serif;
+	background-color: aliceblue;
+	/*font-family: 'Roboto Condensed', sans-serif;*/
+	font-weight: bold;
 	border-bottom: 0px;
 }
 
 .navbar-default .navbar-brand {
 	/*font-family: 'Roboto Condensed', sans-serif;*/
-	color: dodgerblue;
+	color: deepskyblue;
 	font-weight: bold;
 	font-style: italic;
 }
 
 .navbar-default .navbar-brand:hover {
-	color: #D8DFE5;
+	color: lime;
 	font-weight: bold;
 }
+
+.navbar-default .navbar-nav li a {
+	color: skyblue;
+}
+
 
 .navbar-default .navbar-nav li a:hover {
 	color: dodgerblue;
@@ -43,10 +49,16 @@ body {
 	background-color: #D8DFE5;
 }
 
+.logos {
+	/*max-width: 30px;*/
+	margin: 15px;
+}
+
+
 
 /* BODY TEXT */
 h1 {
-	/*font-family: 'Roboto Condensed', sans-serif;*/
+	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: bold;
 	text-shadow: 1px 1px #3399ff;
 	/*margin-bottom: 30px;*/
@@ -79,10 +91,11 @@ footer {
 	font-size: 13px;
 }
 
+
 /*MEDIA QUERIES FOR IMAGES*/
 @media (min-width: 768px) {
 	.galleryimg {
- 		width: 60%;
+ 		max-width: 60%;
 	}
 
 	body {

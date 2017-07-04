@@ -1,5 +1,5 @@
 {
-  "name": "lauramcginn.net",
+  "name": "Personal Portfolio",
   "version": "1.0.0",
   "description": "Portfolio site for Laura McGinn",
   "main": "server.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LauraMcG/dotnet.git"
+    "url": "git+https://github.com/LauraMcG/personal-portfolio.git"
   },
   "author": "Laura McGinn",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LauraMcG/dotnet/issues"
+    "url": "https://github.com/LauraMcG/personal-portfolio/issues"
   },
-  "homepage": "https://github.com/LauraMcG/dotnet#readme",
+  "homepage": "https://github.com/LauraMcG/personal-portfolio#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",

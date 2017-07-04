@@ -1,31 +1,30 @@
 <div class="container content">
 
-{{#each info}}
 	<div class="row">
-		<p><h1>{{this.title}}</h1>
-		<h3><a href="{{this.liveURL}}">Live</a> | <a href="{{this.githubRepo}}">GitHub</a></h3>
-		<p>{{this.summary}}</p>
+		<p><h1>{{doc.title}}</h1>
+		<h3><a href="{{doc.liveURL}}">Live</a> | <a href="{{doc.githubRepo}}">GitHub</a></h3>
+		<p>{{doc.summary}}</p>
 	</div>
 	{{!-- gallery of screenshots --}}
 	<div class = "row app-gallery">
 		<div class ="col-md-4">
-			<img src="{{this.image1URL}}" class="img-responsive" alt="{{this.image1caption}}">
+			<img src="{{doc.image1URL}}" class="img-responsive" alt="{{doc.image1caption}}">
 			<div class="caption">
-				<p class="text-muted">{{this.image1caption}}</p>
+				<p class="text-muted">{{doc.image1caption}}</p>
 			</div>
 		</div>
 
 		<div class ="col-md-4">
-			<img src="{{this.image2URL}}" class="img-responsive" alt="{{this.image2caption}}">
+			<img src="{{doc.image2URL}}" class="img-responsive" alt="{{doc.image2caption}}">
 			<div class="caption">
-				<p class="text-muted">{{this.image2caption}}</p>
+				<p class="text-muted">{{doc.image2caption}}</p>
 			</div>
 		</div>
 
 		<div class ="col-md-4">
-			<img src="{{this.image3URL}}" class="img-responsive" alt="{{this.image3caption}}">
+			<img src="{{doc.image3URL}}" class="img-responsive" alt="{{doc.image3caption}}">
 			<div class="caption">
-				<p class="text-muted">{{this.image3caption}}</p>
+				<p class="text-muted">{{doc.image3caption}}</p>
 			</div>
 		</div>
 
@@ -34,12 +33,10 @@
 	<div class="row">
 		<div class="col-md-6">
 			<h3>Technologies Used</h3>
-			<p>{{this.technologiesUsed}}</p>
+			<p>{{doc.technologiesUsed}}</p>
 
 		</div>
 	</div>
-
-{{/each}}
 
 </div> <!-- /.content -->
 

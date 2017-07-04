@@ -8,6 +8,7 @@ var mongoose = require('mongoose');
 var Art = require('./models/Art.js');
 var Dev = require('./models/Dev.js');
 
+mongoose.Promise = Promise;
 
 //EXPRESS CONFIG
 
@@ -24,6 +25,7 @@ app.use(express.static(process.cwd() + '/public'));
 //MONGOOSE CONFIG
 
 mongoose.connect('mongodb://heroku_dmtlqhl8:jd4mp0s2a1r6dgqpel90e8jlsn@ds149382.mlab.com:49382/heroku_dmtlqhl8');
+
 var db = mongoose.connection;
 
 db.on('error', function(error) {

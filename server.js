@@ -12,7 +12,7 @@ var Dev = require('./models/Dev.js');
 //EXPRESS CONFIG
 
 var app = express();
-var port = 8080;
+var port = process.env.PORT || 8080;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));

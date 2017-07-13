@@ -24,7 +24,7 @@ app.use(express.static(process.cwd() + '/public'));
 
 //MONGOOSE CONFIG
 
-mongoose.connect('');
+mongoose.connect('mongodb://heroku_dmtlqhl8:jd4mp0s2a1r6dgqpel90e8jlsn@ds149382.mlab.com:49382/heroku_dmtlqhl8');
 
 var db = mongoose.connection;
 

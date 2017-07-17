@@ -6,7 +6,7 @@ module.exports = function(app) {
 ///INDEX ROUTE
 
 	app.get('/', function(req,res) {
-		res.render('index');
+		res.render('contact');
 	});
 
 //ART ROUTES

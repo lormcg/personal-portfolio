@@ -24,7 +24,7 @@ app.use(express.static(process.cwd() + '/public'));
 
 //MONGOOSE CONFIG
 
-mongoose.connect('');
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/lauramcginn");
 
 var db = mongoose.connection;
 

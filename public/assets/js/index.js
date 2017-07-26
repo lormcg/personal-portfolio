@@ -1,18 +1,20 @@
 $(document).ready(function() {
 
+	var gradientColors = ['khaki', 'lightsalmon', 'hotpink', 'tomato', 'orchid', 'palegreen', 'turquoise', 'mistyrose', 'lightslategray'];
 
-
-	console.log('I work!');
-
-	var dynamicColor = $('#bottom-color');
-
-	$('.drips').on('click', function() {
-		var gradientColors = ['peachpuff', 'lightsalmon', 'hotpink', 'tomato', 'plum', 'palegreen', 'turquoise', 'honeydew', 'mistyrose', 'lightslategray'];
-
+	function changeColor() {
 		var newColor = gradientColors[Math.floor(Math.random() * gradientColors.length)];
 
 		$('#bottom-color').attr('stop-color', newColor);
-	});
+	};
+
+
+
+	$(document).on('load', changeColor());
+
+	// $('.drips').on('click', changeColor());
+
+
 
 
 	// $('.palette').on ('click', function() {

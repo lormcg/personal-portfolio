@@ -12,19 +12,21 @@ body {
 	background-color: aliceblue;
 	/*font-family: 'Roboto Condensed', sans-serif;*/
 	font-weight: bold;
+	font-style: italic;
 	border-bottom: 0px;
 }
 
 .navbar-default .navbar-brand {
 	/*font-family: 'Roboto Condensed', sans-serif;*/
 	color: skyblue;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	font-style: italic;
 }
 
 .navbar-default .navbar-brand:hover {
 	color: dodgerblue;
-	font-weight: bold;
+	/*font-weight: bold;*/
+	font-style: italic;
 }
 
 .navbar-default .navbar-nav li a {
@@ -64,9 +66,10 @@ body {
 	margin-top: -25px;
 	/*background-color: honeydew;*/
 }
-.drips:hover {
+/*.drips:hover {
 	fill:url(#HoverGradient);
-}
+	transition: .5s;
+}*/
 
 
 

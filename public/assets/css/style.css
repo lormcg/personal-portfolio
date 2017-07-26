@@ -21,10 +21,10 @@ body {
 	font-style: italic;
 }
 
-.navbar-default .navbar-brand:hover {
+/*.navbar-default .navbar-brand:hover {
 	color: lime;
 	font-weight: bold;
-}
+}*/
 
 .navbar-default .navbar-nav li a {
 	color: skyblue;
@@ -56,27 +56,15 @@ body {
 
 /*DRIPS*/
 
-/*.svg-container { 
-	display: inline-block;
-	position: relative;
-	width: 100%;
-	padding-bottom: 100%; 
-	vertical-align: middle; 
-	overflow: hidden; 
-}
-
-.svg-content { 
-	display: inline-block;
-	position: absolute;
-	top: 0;
-	left: 0;
-}*/
-
 .svg-drips {
 	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	margin-top: -25px;
+	/*background-color: honeydew;*/
 }
 .drips:hover {
-	fill:deeppink;
+	fill:url(#PinkGradient);
 }
 
 

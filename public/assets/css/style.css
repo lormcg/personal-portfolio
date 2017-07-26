@@ -3,6 +3,7 @@
 body {
 	font-family: 'Lato', sans-serif;
 	color: #283747;
+	/*background-color: honeydew;*/
 }
 
 /* NAVBAR */
@@ -16,15 +17,15 @@ body {
 
 .navbar-default .navbar-brand {
 	/*font-family: 'Roboto Condensed', sans-serif;*/
-	color: deepskyblue;
+	color: skyblue;
 	font-weight: bold;
 	font-style: italic;
 }
 
-/*.navbar-default .navbar-brand:hover {
-	color: lime;
+.navbar-default .navbar-brand:hover {
+	color: dodgerblue;
 	font-weight: bold;
-}*/
+}
 
 .navbar-default .navbar-nav li a {
 	color: skyblue;
@@ -54,7 +55,7 @@ body {
 	margin: 15px;
 }
 
-/*DRIPS*/
+/*INDEX*/
 
 .svg-drips {
 	text-align: center;
@@ -64,7 +65,7 @@ body {
 	/*background-color: honeydew;*/
 }
 .drips:hover {
-	fill:url(#PinkGradient);
+	fill:url(#HoverGradient);
 }
 
 

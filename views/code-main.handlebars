@@ -1,21 +1,35 @@
-<div class="container-fluid content" align = "center">
-	<h1>APPS DEVELOPED</h1>
+<div class="container content">
+<p>Check out some of my favorite development projects below!</p>
 
-{{#each apps}}
+{{!-- {{#each apps}}
 	<div class= "app-gallery row">
 		<div class= "col-md-4">
-			<img src="{{this.image3URL}}" class="img-responsive" alt="{{this.title}}">
+			<a href="{{this.liveURL}}" target="_blank"><img src="{{this.image3URL}}" class="img-responsive" alt="{{this.title}}"></a>
+
+
 		</div>
 
 			<div class="col-md-8 caption">
 				<h3>{{this.title}}</h3>
-				<h4><a href="/code/{{this.title}}">Learn More</a> | <a href="{{this.liveURL}}">See Live</a> | <a href="{{this.githubRepo}}">GitHub Repo</a></h4>
+				<p><a href="/code/{{this.title}}">Learn More</a> | <a href="{{this.liveURL}}" target="_blank">See Live</a> | <a href="{{this.githubRepo}}" target="_blank"> See Repository</a></p>
 				<p>{{this.tagline}}</p>
 			</div>
 	</div>
 
-{{/each}}
+{{/each}} --}}
+
+	<div class= "app-gallery row">
+		{{#each apps}}
+				<div class= "col-md-4">
+					<a href="{{this.liveURL}}" target="_blank"><img src="{{this.image3URL}}" class="img-responsive" alt="{{this.title}}"></a>		
+						<h3>{{this.title}}</h3>
+						<p><a href="/code/{{this.title}}">Learn More</a> | <a href="{{this.liveURL}}" target="_blank">See Live</a> | <a href="{{this.githubRepo}}" target="_blank"> See Repository</a></p>
+						<p>{{this.tagline}}</p>
+					
+				</div>
+		{{/each}}
+	</div>
 
 </div><!-- /.content -->
 
-{{> long-footer}}
+{{> short-footer}}

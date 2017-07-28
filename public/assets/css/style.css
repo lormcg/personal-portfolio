@@ -10,14 +10,12 @@ body {
 
 .navbar {
 	background-color: aliceblue;
-	/*font-family: 'Roboto Condensed', sans-serif;*/
 	font-weight: bold;
 	font-style: italic;
 	border-bottom: 0px;
 }
 
 .navbar-default .navbar-brand {
-	/*font-family: 'Roboto Condensed', sans-serif;*/
 	color: skyblue;
 	/*font-weight: bold;*/
 	font-style: italic;
@@ -60,6 +58,7 @@ body {
 /*INDEX*/
 
 .svg-drips {
+	width: 100%;
 	text-align: center;
 	padding: 0px;
 	margin: 0px;
@@ -75,15 +74,20 @@ body {
 
 /* BODY TEXT */
 h1 {
-	font-family: 'Roboto Condensed', sans-serif;
 	font-weight: bold;
 	text-shadow: 1px 1px #3399ff;
 	/*margin-bottom: 30px;*/
 }
 
+
+
 /* APP GALLERY */
 .app-gallery {
 	margin-top: 35px;
+}
+
+.caption {
+	margin-top: 15px;
 }
 
 .app-gallery .caption {

@@ -13,8 +13,14 @@ body {
 	font-weight: bold;
 	font-style: italic;
 	border-bottom: 0px;
+
+	/*transition: all .05s ease;*/
 }
 
+/*.navbar .hidden {
+	transform: translateX(-90%);
+}
+*/
 .navbar-default .navbar-brand {
 	color: skyblue;
 	/*font-weight: bold;*/
@@ -50,11 +56,6 @@ body {
 	background-color: #D8DFE5;
 }
 
-.logos {
-	/*max-width: 30px;*/
-	margin: 15px;
-}
-
 /*INDEX*/
 
 .svg-drips {
@@ -62,24 +63,27 @@ body {
 	text-align: center;
 	padding: 0px;
 	margin: 0px;
-	margin-top: -25px;
+	margin-top: 50px;
 	/*background-color: honeydew;*/
 }
-/*.drips:hover {
-	fill:url(#HoverGradient);
-	transition: .5s;
-}*/
-
-
 
 /* BODY TEXT */
+
+.content {
+	margin-top: 50px;
+	padding-top: 20px;
+}
+
 h1 {
 	font-weight: bold;
 	text-shadow: 1px 1px #3399ff;
 	/*margin-bottom: 30px;*/
 }
 
-
+.logos {
+	/*max-width: 30px;*/
+	margin: 15px;
+}
 
 /* APP GALLERY */
 .app-gallery {

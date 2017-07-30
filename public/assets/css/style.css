@@ -120,6 +120,7 @@ h1 {
 footer {
 	text-align: center;
 	background-color: ghostwhite;
+	margin-top: 25px;
 	padding-top: 10px;
 	font-size: 13px;
 }

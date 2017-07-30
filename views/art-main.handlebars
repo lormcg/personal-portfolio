@@ -1,12 +1,18 @@
 
 <div class="container content">
+	<div class="row">
+		<h1> Artwork </h1>
+		<p>My recent installations and paintings utilize the physical and chemical properties of paint and phenomenological effects of light to explore the boundaries between our bodies, our psyches, and the environments we inhabit.<p>
 
-	<p>My recent installations and paintings utilize the physical and chemical properties of paint and phenomenological effects of light to explore the boundaries between our bodies, our psyches, and the environments we inhabit.<p>
+		<p>I've organized my work by year below. More recent work will be added as I continue to document it.</p>
+	</div>
 
-	<p>I've organized my work by year. More recent work will be added as I continue to document it.</p>
+	<div class="row">
 
 	{{#each years}}
-		<h3><a href="/art/{{this}}">{{this}}</a></h3>
+		<div class="col-md-1">
+			<h3><a href="/art/{{this}}">{{this}}</a></h3>
+		</div>
 	{{/each}}
 
 </div>

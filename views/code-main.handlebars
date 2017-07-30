@@ -1,4 +1,5 @@
 <div class="container content">
+<h1>Apps developed</h1>
 <p>Check out some of my favorite development projects below!</p>
 
 {{!-- {{#each apps}}
@@ -18,18 +19,32 @@
 
 {{/each}} --}}
 
+
+{{!--   <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+</div> --}}
+
 	<div class= "app-gallery row">
 		{{#each apps}}
 				<div class= "col-md-4">
-					<a href="{{this.liveURL}}" target="_blank"><img src="{{this.image3URL}}" class="img-responsive" alt="{{this.title}}"></a>		
+					<a href="{{this.liveURL}}" target="_blank"><img src="{{this.image3URL}}" class="img-responsive" alt="{{this.title}}"></a>
 						<h3>{{this.title}}</h3>
-						<p><a href="/code/{{this.title}}">Learn More</a> | <a href="{{this.liveURL}}" target="_blank">See Live</a> | <a href="{{this.githubRepo}}" target="_blank"> See Repository</a></p>
-						<p>{{this.tagline}}</p>
-					
+						<div class="panel panel-info">
+						  <div class="panel-heading">							
+							<h3 class="panel-title"><a href="/code/{{this.title}}">Learn More</a>  |  <a href="{{this.liveURL}}" target="_blank">Live</a>  |  <a href="{{this.githubRepo}}" target="_blank">Repository</a></h3>
+						  </div>
+						  <div class="panel-body">
+							<p>{{this.tagline}}</p>
+						  </div>
+						</div>
 				</div>
 		{{/each}}
 	</div>
 
 </div><!-- /.content -->
 
-{{> short-footer}}
+{{> long-footer}}

@@ -6,6 +6,14 @@ body {
 	/*background-color: honeydew;*/
 }
 
+a {
+	-o-transition:.4s;
+	-ms-transition:.4s;
+	-moz-transition:.4s;
+	-webkit-transition:.4s;
+	transition: .4s;
+}
+
 /* NAVBAR */
 
 .navbar {

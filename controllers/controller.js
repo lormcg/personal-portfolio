@@ -13,13 +13,42 @@ module.exports = function(app) {
 
 	//display general art page, linking to art by year.
 	app.get('/art', function (req,res) {
+
+		// Art.find({}).distinct('year')
+		// 		.exec(function (error,doc) {
+		// 		if (error) {
+		// 			console.log(error);
+		// 		} else {
+		// 			var artworkYears = doc;
+		// 			for (let years of artworkYears) {
+		// 				Art.
+		// 			}
+		// 		}
+		// 	});
+		// });
+
+		// Art.find({}).then( function (allArt) {
+		// 	Art.find({}).distinct('year')
+		// 		.exec(function (error,doc) {
+		// 		if (error) {
+		// 			console.log(error);
+		// 		} else {
+		// 			console.log(allArt);
+		// 			res.render('art-main', {years: doc});
+		// 		}
+		// 	});
+		// });
+
+
+		//original query	
+
 		Art.find({}).distinct('year')
 
 			.exec(function (error,doc) {
 			if (error) {
 				console.log(error);
 			} else {
-				// console.log(doc);
+				console.log(doc);
 				res.render('art-main', {years: doc});
 			}
 		});

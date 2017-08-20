@@ -71,6 +71,11 @@ a {
 
 /*INDEX*/
 
+svg {
+	z-index: -1;
+	/*position: absolute;*/
+}
+
 .svg-drips {
 	width: 100%;
 	text-align: center;
@@ -78,6 +83,16 @@ a {
 	margin: 0px;
 	margin-top: 50px;
 	/*background-color: honeydew;*/
+}
+
+.welcome {
+	z-index: 10;
+	position: absolute;
+	top: 15%;
+	left: 8%;
+	background-color: white;
+	padding: 5px 10px;
+	border-radius: 50px;
 }
 
 /* BODY TEXT */

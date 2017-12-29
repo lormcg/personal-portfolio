@@ -85,13 +85,13 @@ svg {
 	/*background-color: honeydew;*/
 }
 
-.drip1{fill:red;}
+/*.drip1{fill:red;}
 .drip2{fill:orange;}
 .drip3{fill:yellow;}
 .drip4{fill:green;}
 .drip5{fill:cyan;}
 .drip6{fill:blue;}
-.drip7{fill:purple;}
+.drip7{fill:purple;}*/
 
 .drip {fill: url(#TheGradient);}
 
@@ -100,22 +100,24 @@ svg {
 	position: absolute;
 	top: 5%;
 	vertical-align: middle;
-
+	width: 100%;
 }
 
-.welcome-bubble {
-	background-color: white;
-	padding: 5px 10px;
-	border-radius: 20px;
-	margin: 10px auto;
-	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3); 
-}
-
-.welcome-text {
+.welcome-text h1, .welcome-text h3 {
+	font-family: 'Bungee Hairline', cursive;
 	color: #fff;
-	font-size: 65px;
 	font-weight: bold;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); 
+}
+
+.welcome-text a {
+	color: #fff;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); 
+	/*font-size: 20px;*/
+}
+
+.welcome-text a:hover {
+	color: #666;
 }
 
 /* BODY TEXT */
@@ -167,7 +169,6 @@ footer {
   	height: 40px;
 	text-align: center;
 	background-color: ghostwhite;
-	/*margin-top: 25px;*/
 	padding-top: 10px;
 	font-size: 13px;
 }

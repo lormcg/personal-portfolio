@@ -8,31 +8,40 @@ $(document).ready(function() {
 
 		if (currentScrollTop <= lastScrollTop) {
 			$('.navbar').fadeIn();
-			// $('.navbar').addClass('hidden');
-			// $('.navbar').slideDown(400);
-
 		} else {
 			$('.navbar').fadeOut();
-			// $('.navbar').removeClass('hidden');
-			// $('.navbar').slideUp(400);
 			lastScrollTop = currentScrollTop;
-			
 		}
 	});
 	
+
+	function getRandomColor() {
+	  var letters = '0123456789ABCDEF';
+	  var color = '#';
+	  for (var i = 0; i < 6; i++) {
+	    color += letters[Math.floor(Math.random() * 16)];
+	  }
+	  return color;
+	}
+
+
 //changeColor selects from a set of pre-seleced colors at random upon page load.
 	function changeColor() {
-		var gradientColors = ['khaki', 'lightsalmon', 'hotpink', 'tomato', 'orchid', 'palegreen', 'turquoise', 'mistyrose', 'lightslategray'];
+		// var gradientColors = ['khaki', 'lightsalmon', 'hotpink', 'tomato', 'orchid', 'palegreen', 'turquoise', 'mistyrose', 'lightslategray'];
+		// var newColor = gradientColors[Math.floor(Math.random() * gradientColors.length)];
 
-		var newColor = gradientColors[Math.floor(Math.random() * gradientColors.length)];
+
 		//select the end color of the drip gradient on the index.
-		$('#bottom-color').attr('stop-color', newColor);
+		$('#top-color').attr('stop-color', getRandomColor());
+		$('#bottom-color').attr('stop-color', getRandomColor());
 	};
 
+
+
+	$('.drip').on('click', changeColor());
+
 	changeColor();
-
-	$('.drips').on('click', changeColor());
-
+	
 //jQ for paint by numbers
 
 	// $('.palette').on ('click', function() {

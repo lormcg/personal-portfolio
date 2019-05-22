@@ -27,20 +27,13 @@ $(document).ready(function() {
 
 //changeColor selects from a set of pre-seleced colors at random upon page load.
 	function changeColor() {
-		// var gradientColors = ['khaki', 'lightsalmon', 'hotpink', 'tomato', 'orchid', 'palegreen', 'turquoise', 'mistyrose', 'lightslategray'];
-		// var newColor = gradientColors[Math.floor(Math.random() * gradientColors.length)];
-
 
 		//select the end color of the drip gradient on the index.
 		$('#top-color').attr('stop-color', getRandomColor());
 		$('#bottom-color').attr('stop-color', getRandomColor());
 	};
 
-
-
-	$('.drip').on('click', changeColor());
-
-	changeColor();
+	// changeColor();
 	
 //jQ for paint by numbers
 
@@ -49,7 +42,6 @@ $(document).ready(function() {
 
 	// 	$('.current').css('background-color', currentColor);
 	// });
-
 
 	// $('.canvas').on('click', function() {
 	// 	$(this).css('background-color', currentColor);

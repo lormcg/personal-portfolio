@@ -5,9 +5,12 @@ html {
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Mono', sans-serif;
 	color: #283747;
 	margin-bottom: 70px;
+	line-height: 2.5rem;
+	background-color: #FF91AF;
+	
 }
 
 a {
@@ -16,18 +19,21 @@ a {
 	-moz-transition:.4s;
 	-webkit-transition:.4s;
 	transition: .4s;
+
+	color: #332789;
 }
 
 /* NAVBAR */
 
 .navbar {
-	background-color: aliceblue;
+	/* background-color: aliceblue; */
+	background-color: #332789;
 	font-weight: bold;
 	font-style: italic;
 	border-bottom: 0px;
 }
 .navbar-default .navbar-brand {
-	color: skyblue;
+	color: #79D7FC;
 	font-style: italic;
 }
 
@@ -37,7 +43,7 @@ a {
 }
 
 .navbar-default .navbar-nav li a {
-	color: skyblue;
+	color: #79D7FC;
 }
 
 
@@ -105,11 +111,21 @@ svg {
 .content {
 	margin: 50px auto 50px auto;
 	padding-top: 20px;
+	
+}
+.content-box {
+	/* background-color:  rgba(248, 239, 222, 1); */
+	padding: 2rem;
+	/* margin: 1rem auto; */
+	/* box-shadow: .25rem .25rem 0rem  rgba(0, 0, 0, 0.5); */
+	border-style: double; 
 }
 
 h1 {
 	font-weight: bold;
-	text-shadow: 1px 1px #3399ff;
+	line-height: 5rem;
+	margin-bottom: 20px;
+	/* text-shadow: .05rem .05rem  rgba(0, 0, 0, 0.5); */
 }
 
 .logos {

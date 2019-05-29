@@ -48,7 +48,6 @@ module.exports = function(app) {
 			if (error) {
 				console.log(error);
 			} else {
-				console.log(doc);
 				res.render('art-main', {years: doc});
 			}
 		});

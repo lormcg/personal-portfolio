@@ -10,13 +10,11 @@
 		<img src="{{this.imageURL}}" class="img-responsive" alt="{{this.title}}. {{this.medium}}. {{this.year}}">
 		
 		<div class="caption">
-			<p>{{this.title}}. {{this.medium}}. {{this.dimensions}}. 
+			<p>{{#if this.title}} {{this.title}}. {{/if}}
+				{{#if this.medium}} {{this.medium}}. {{/if}}
+				{{#if this.dimensions}} {{this.dimensions}}.  {{/if}}
 					{{!-- only show notes (for installation nots or photo credit) if available. --}}
-					{{#if this.notes}}
-						{{this.notes}}.
-					{{else}}
-
-					{{/if}}
+					{{#if this.notes}} {{this.notes}}.{{/if}}
 				{{this.year}}.
 			</p>
 		</div>

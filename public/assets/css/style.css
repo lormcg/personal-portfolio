@@ -114,13 +114,13 @@ svg {
 	color: #333;
 }
 
-.welcome-text a {
-	color: #fff;
+/* .welcome-text a {
+	color: 
 }
 
 .welcome-text a:hover {
 	color: #666;
-}
+} */
 
 /* BODY TEXT */
 
@@ -164,9 +164,14 @@ h1 {
 
 /*ART GALLERY*/
 
-.galleryimg .caption p{
+.galleryimg .caption {
 	text-align: left;
-	margin: 15px auto 35px auto;
+	/* margin: 15px auto 35px auto; */
+	margin-top: 0px;
+}
+
+.galleryimg img {
+	margin-bottom: 5rem;
 }
 
 

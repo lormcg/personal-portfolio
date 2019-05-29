@@ -13,6 +13,9 @@ body {
 	background-color: aliceblue ;
 	
 }
+hr {
+	color: #98CADE;
+}
 
 a {
 	-o-transition:.4s;
@@ -20,12 +23,17 @@ a {
 	-moz-transition:.4s;
 	-webkit-transition:.4s;
 	transition: .4s;
-
+	text-decoration: underline;
 	color: #332789;
 }
 
+hr {
+
+}
+
 a:hover {
-	color: #79D7FC;
+	color: #332789;
+	background-color: #79D7FC;
 }
 
 /* NAVBAR */
@@ -40,20 +48,23 @@ a:hover {
 .navbar-default .navbar-brand {
 	color: #79D7FC;
 	font-style: italic;
+	text-decoration:none;
 }
 
 .navbar-default .navbar-brand:hover {
-	color: dodgerblue;
-	font-style: italic;
+	color: #332789;
+	background-color: #79D7FC;
 }
 
 .navbar-default .navbar-nav li a {
 	color: #79D7FC;
+	text-decoration:none;
 }
 
 
 .navbar-default .navbar-nav li a:hover {
-	color: dodgerblue;
+	color: #332789;
+	background-color: #79D7FC;
 }
 
 /*displays onthe hover of an active nav item*/

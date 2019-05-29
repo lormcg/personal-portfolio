@@ -98,10 +98,10 @@ module.exports = function(app) {
 
 	});
 
-//CONTACT ROUTE
+//ABOUT ROUTE
 
-	app.get('/contact', function(req,res) {
-		res.render('contact');
+	app.get('/about', function(req,res) {
+		res.render('about');
 	});
 
 

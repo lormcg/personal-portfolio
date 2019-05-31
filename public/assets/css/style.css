@@ -27,9 +27,6 @@ a {
 	color: #332789;
 }
 
-hr {
-
-}
 
 a:hover {
 	color: #332789;
@@ -114,14 +111,6 @@ svg {
 	color: #333;
 }
 
-/* .welcome-text a {
-	color: 
-}
-
-.welcome-text a:hover {
-	color: #666;
-} */
-
 /* BODY TEXT */
 
 .content {
@@ -179,11 +168,11 @@ h1 {
 
 footer {
 	position: absolute;
-  	bottom: 0;
-  	width: 100%;
-  	height: 40px;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
 	text-align: center;
-	background-color: ghostwhite;
+	/* background-color: ghostwhite; */
 	padding-top: 10px;
 	font-size: 13px;
 }
@@ -192,7 +181,7 @@ footer {
 /*MEDIA QUERIES FOR IMAGES*/
 @media (min-width: 768px) {
 	.galleryimg {
- 		max-width: 60%;
+	max-width: 60%;
 	}
 
 	body {

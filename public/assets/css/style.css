@@ -163,6 +163,10 @@ h1 {
 	margin-bottom: 5rem;
 }
 
+.app-preview-box{
+	min-height: 10rem;
+}
+
 
 /* FOOTER */
 

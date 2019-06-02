@@ -1,25 +1,44 @@
 {{> header }}
 
 <div class="container content">
-	<h2>Skills</h2>
-	{{!-- <hr> --}}
-		<div class="row">
-			<div class="col-md-4">
-			<h4>Front-End</h4>
+	
+
+	<div class="row" id="apps">
+		<h1>Web Development</h1>
+		<h2>Professional Work</h2>
+		<div class= "app-gallery row">placeholder for IAL site</div>
+		<h2>Student Work</h2>
+		<hr>
+			<div class= "app-gallery row">
+		{{#each apps}}
+		
+				<div class= "col-md-3 app-preview-box">
+					<img src="{{this.image3URL}}" class="img-responsive" alt="{{this.title}}">
+					<h3><a href="/code/{{this.title}}">{{this.title}}</a></h3>
+					<p>{{this.tagline}}</p>
+				</div>
+
+		{{/each}}
+	</div>
+
+	<div class="row">
+		<h2>Skills</h2>
+		<div class="col-md-4">
+			<h3 class="h4">Front End</h3>
 			<hr>
 			<ul>
-				<li>React</li>
-				<li>Handlebars</li>
+				<li>Advanced JavaScript frameworks (Angular 6+, React)</li>
+				<li>Templating tools (Handlebars, Liquid, Jekyll)</li>
 				<li>jQuery</li>
 				<li>JavaScript</li>
-				<li>Bootstrap Framework</li>
+				<li>Component Libraries (Bootstrap, Angular Material)</li>
 				<li>CSS</li>
 				<li>HTML</li>
 			</ul>
-			</div>
+		</div>
 
-			<div class="col-md-4">
-			<h4>Back-End</h4>
+		<div class="col-md-4">
+			<h3 class="h4">Back End</h3>
 			<hr>
 			<ul>
 				<li>Node.js</li>
@@ -29,11 +48,11 @@
 				<li>MySQL</li>
 				<li>Sequelize</li>
 				<li>Firebase</li>
-			</ul>
-			</div>
+		</ul>
+		</div>
 
-			<div class="col-md-4">
-			<h4>Other Tools</h4>
+		<div class="col-md-4">
+			<h3 class="h4">Other Tools</h3>
 			<hr>
 			<ul>
 				<li>Heroku deployment</li>
@@ -41,30 +60,16 @@
 				<li>Version Control (Git)</li>
 				<li>Postman</li>
 			</ul>
-			</div>
 		</div>
-
-	<div class="row" id="apps">
-	<h2>Apps developed</h2>
-	<hr>
-
-	{{#each apps}}
-		<div class= "app-gallery row">
-			<div class= "col-md-4">
-				<a href="{{this.liveURL}}" target="_blank"><img src="{{this.image3URL}}" class="img-responsive" alt="{{this.title}}"></a>
-
-
-			</div>
-
-				<div class="col-md-8 caption">
-					<h3>{{this.title}}</h3>
-					<p><a href="/code/{{this.title}}">Learn More</a> | <a href="{{this.liveURL}}" target="_blank">See Live</a> | <a href="{{this.githubRepo}}" target="_blank"> See Repository</a></p>
-					<p>{{this.tagline}}</p>
-				</div>
-		</div>
-
-	{{/each}}
 	</div>
+</div>
+
+
+{{!-- <ul class="list-unstyled">
+	<li class="media preview-list">
+
+	</li>
+</ul> --}}
 
 
 {{!--   <div class="panel-heading">

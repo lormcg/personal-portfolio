@@ -6,19 +6,17 @@
 	{{#each artworks}}
 
 	<div class= "galleryimg">
-
-		<div class="col-md-3 order-sm-12 caption">
+		<div class="col-md-4 order-sm-12 caption">
 			{{#if this.title}}<h2 class="h4"><b> {{this.title}}</b></h2>{{/if}}
 			<p>
 				{{#if this.medium}} {{this.medium}}. {{/if}}
-				{{#if this.dimensions}} {{this.dimensions}}.  {{/if}}
-					{{!-- only show notes (for installation nots or photo credit) if available. --}}
-					{{#if this.notes}} {{this.notes}}.{{/if}}
+				{{#if this.dimensions}} {{this.dimensions}}. {{/if}}
+				{{#if this.notes}} {{this.notes}}.{{/if}}
 				{{this.year}}.
 			</p>
 		</div>
 		
-		<div class="col-md-9 order-sm-1"><img src="{{this.imageURL}}" class="img-responsive" alt="{{this.title}}. {{this.medium}}. {{this.year}}"></div>
+		<div class="col-md-8 order-sm-1"><img src="{{this.imageURL}}" class="img-responsive" alt="{{this.title}}. {{this.medium}}. {{this.year}}"></div>
 		
 		
 

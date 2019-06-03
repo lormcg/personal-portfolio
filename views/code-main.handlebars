@@ -9,22 +9,8 @@
 		<div class= "app-gallery row">placeholder for IAL site</div> --}}
 
 		Laura currently works at Avanade as a front end developer creating solutions for multinational companies and internal operations.
-		<h2>Student Work</h2>
-		<hr>
-			<div class= "app-gallery row">
-		{{#each apps}}
-				{{!-- {{#if testItem}} --}}
-					<div class= "col-md-3 app-preview-box">
-						<img src="{{image3URL}}" class="img-responsive" alt="{{title}}">
-						<h3><a href="/code/{{title}}">{{title}}</a></h3>
-						<p>{{tagline}}</p>
-						{{!-- {{#if student}}shiiiit{{/if}}{{#if testItem}}shiiiit{{/if}} --}}
-					</div>
-			{{!-- {{/if}} --}}
-		{{/each}}
-	</div>
 
-	<div class="row">
+			<div class="row">
 		<h2>Skills</h2>
 		<div class="col-md-4">
 			<h3 class="h4">Front End</h3>
@@ -32,9 +18,9 @@
 			<ul>
 				<li>Advanced JavaScript frameworks (Angular 6+, React)</li>
 				<li>Templating tools (Handlebars, Liquid, Jekyll)</li>
+				<li>Component Libraries (Bootstrap, Angular Material)</li>
 				<li>jQuery</li>
 				<li>JavaScript</li>
-				<li>Component Libraries (Bootstrap, Angular Material)</li>
 				<li>CSS</li>
 				<li>HTML</li>
 			</ul>
@@ -61,10 +47,28 @@
 				<li>Heroku deployment</li>
 				<li>Agile methodology</li>
 				<li>Version Control (Git)</li>
+				<li>VSTS</li>
 				<li>Postman</li>
 			</ul>
 		</div>
 	</div>
+	
+		<h2>Student Work</h2>
+		<hr>
+			<div class= "app-gallery row">
+		{{#each apps}}
+				{{!-- {{#if testItem}} --}}
+					<div class= "col-md-3 app-preview-box">
+						<img src="{{image3URL}}" class="img-responsive" alt="{{title}}">
+						<h3><a href="/code/{{title}}">{{title}}</a></h3>
+						<p>{{tagline}}</p>
+						{{!-- {{#if student}}shiiiit{{/if}}{{#if testItem}}shiiiit{{/if}} --}}
+					</div>
+			{{!-- {{/if}} --}}
+		{{/each}}
+	</div>
+
+
 </div>
 
 

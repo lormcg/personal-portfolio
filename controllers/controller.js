@@ -75,6 +75,7 @@ module.exports = function(app) {
 			if (error) {
 				console.log(error);	
 			} else {
+				console.log(doc);
 				res.render('code-main', {apps: doc});
 			}
 		});

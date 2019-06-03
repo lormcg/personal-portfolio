@@ -5,19 +5,22 @@
 
 	<div class="row" id="apps">
 		<h1>Web Development</h1>
-		<h2>Professional Work</h2>
-		<div class= "app-gallery row">placeholder for IAL site</div>
+		{{!-- <h2>Professional Work</h2>
+		<div class= "app-gallery row">placeholder for IAL site</div> --}}
+
+		Laura currently works at Avanade as a front end developer creating solutions for multinational companies and internal operations.
 		<h2>Student Work</h2>
 		<hr>
 			<div class= "app-gallery row">
 		{{#each apps}}
-		
-				<div class= "col-md-3 app-preview-box">
-					<img src="{{this.image3URL}}" class="img-responsive" alt="{{this.title}}">
-					<h3><a href="/code/{{this.title}}">{{this.title}}</a></h3>
-					<p>{{this.tagline}}</p>
-				</div>
-
+				{{!-- {{#if testItem}} --}}
+					<div class= "col-md-3 app-preview-box">
+						<img src="{{image3URL}}" class="img-responsive" alt="{{title}}">
+						<h3><a href="/code/{{title}}">{{title}}</a></h3>
+						<p>{{tagline}}</p>
+						{{!-- {{#if student}}shiiiit{{/if}}{{#if testItem}}shiiiit{{/if}} --}}
+					</div>
+			{{!-- {{/if}} --}}
 		{{/each}}
 	</div>
 
